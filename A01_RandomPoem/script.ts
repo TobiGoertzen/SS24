@@ -1,0 +1,1 @@
+let subject: string = "Frank", "Claire", "Doug", ""
