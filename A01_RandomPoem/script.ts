@@ -1,10 +1,10 @@
-let subjects: string = "Frank"; "Claire"; "Doug"; "Zoe"; "Lucas"; "Tom";
-let predicates: string = "hasst"; "liebt"; "tötet"; "tadelt"; "bedroht"; "sucht";
-let objects: string = "Geschenke"; "Aufmerksamkeit"; "eine Verschwörung"; "die Reporter"; "den Präsidenten"; "Abgeordnete";
+let subjects: string[] = ["Frank", "Claire", "Doug", "Zoe", "Lucas", "Tom"];
+let predicates: string[] = ["hasst", "liebt", "tötet", "tadelt", "bedroht", "sucht"];
+let objects: string[] = ["Geschenke", "Aufmerksamkeit", "eine Verschwörung", "die Reporter", "den Präsidenten", "Abgeordnete"];
 
 for (let i = 6; i>= 1; i--) {
     console.log(i);
-    const verse: string = getVerse([subjects], [predicates], [objects]);
+    const verse: string = getVerse(subjects, predicates, objects);
     console.log(verse);
 }
 
@@ -25,5 +25,5 @@ function getVerse(_subjects: string[], _predicates: string[], _objects: string[]
     return verse;
 }
 
-const result: string = getVerse([subjects], [predicates], [objects]);
+const result: string = getVerse(subjects, predicates, objects);
 console.log(result);
