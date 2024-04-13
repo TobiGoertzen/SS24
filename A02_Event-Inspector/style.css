@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 10px;
+}
+h1 {
+    font-family: sans-serif;
+    color: black;
+}
+#div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+}
+#div0 {
+    background-color:rgb(255, 225, 0);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div1 {
+    background-color: rgb(34, 0, 255);
+    height: 500px;
+}
+button {
+  background-color: beige;
+}
+span {
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border: thin solid rgb(31,8,8) ;
+    width: 200px;
+    height: 120px;
+}

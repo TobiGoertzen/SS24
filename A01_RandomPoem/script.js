@@ -1,25 +1,10 @@
 "use strict";
-let subjects = "Frank";
-"Claire";
-"Doug";
-"Zoe";
-"Lucas";
-"Tom";
-let predicates = "hasst";
-"liebt";
-"tötet";
-"tadelt";
-"bedroht";
-"sucht";
-let objects = "Geschenke";
-"Aufmerksamkeit";
-"eine Verschwörung";
-"die Reporter";
-"den Präsidenten";
-"Abgeordnete";
+let subjects = ["Frank", "Claire", "Doug", "Zoe", "Lucas", "Tom"];
+let predicates = ["hasst", "liebt", "tötet", "tadelt", "bedroht", "sucht"];
+let objects = ["Geschenke", "Aufmerksamkeit", "eine Verschwörung", "die Reporter", "den Präsidenten", "Abgeordnete"];
 for (let i = 6; i >= 1; i--) {
     console.log(i);
-    const verse = getVerse([subjects], [predicates], [objects]);
+    const verse = getVerse(subjects, predicates, objects);
     console.log(verse);
 }
 function getVerse(_subjects, _predicates, _objects) {
@@ -35,6 +20,6 @@ function getVerse(_subjects, _predicates, _objects) {
     const verse = { randomSubject, randomPredicate, randomObject };
     return verse;
 }
-const result = getVerse([subjects], [predicates], [objects]);
+const result = getVerse(subjects, predicates, objects);
 console.log(result);
 //# sourceMappingURL=script.js.map
