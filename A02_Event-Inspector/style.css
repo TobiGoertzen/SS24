@@ -21,6 +21,9 @@ h1 {
 #div1 {
     background-color: rgb(34, 0, 255);
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button {
   background-color: beige;
